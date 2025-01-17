@@ -17,3 +17,9 @@ export const prettywiseBold = localFont({
   display: 'swap',
   variable: '--font-prettywise-bold'
 })
+
+export const objectivity = localFont({
+  src: './objectivity.otf',
+  display: 'swap',
+  variable: '--font-objectivity'
+})

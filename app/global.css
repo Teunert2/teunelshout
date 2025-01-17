@@ -25,3 +25,7 @@ body {
 .font-prettywise-bold {
   font-family: var(--font-prettywise-bold);
 }
+
+.animate-fade-in {
+  opacity: 1 !important;
+}

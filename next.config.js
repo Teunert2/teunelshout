@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   images: {
-    domains: [], // voeg eventuele externe domeinen toe als de afbeelding van een externe bron komt
+    unoptimized: true,
   },
+  distDir: 'out',
+  trailingSlash: true,
 }
 
 module.exports = nextConfig

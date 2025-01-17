@@ -9,7 +9,7 @@ export default function Page() {
         alt="Background"
         fill
         sizes="100vw"
-        className="object-cover"
+        className="object-cover z-0"
         quality={100}
         priority
       />

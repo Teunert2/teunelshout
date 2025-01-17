@@ -18,6 +18,7 @@ module.exports = {
         'objectivity': ['var(--font-objectivity)'],
         display: ['var(--font-display)'],
         signature: ['var(--font-signature)'],
+        petale: ['var(--font-petale)'],
       },
     },
   },

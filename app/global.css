@@ -6,6 +6,8 @@
   --font-aventra: "";
   --font-prettywise-black: "";
   --font-prettywise-bold: "";
+  --font-objectivity: "";
+  --font-petale: "";
 }
 
 body {
@@ -24,6 +26,14 @@ body {
 
 .font-prettywise-bold {
   font-family: var(--font-prettywise-bold);
+}
+
+.font-objectivity {
+  font-family: var(--font-objectivity);
+}
+
+.font-petale {
+  font-family: var(--font-petale);
 }
 
 .animate-fade-in {

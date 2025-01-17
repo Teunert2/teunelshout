@@ -23,3 +23,9 @@ export const objectivity = localFont({
   display: 'swap',
   variable: '--font-objectivity'
 })
+
+export const petale = localFont({
+  src: './petale.otf',
+  display: 'swap',
+  variable: '--font-petale'
+})

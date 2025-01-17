@@ -1,6 +1,6 @@
 import './global.css'
 import type { Metadata } from 'next'
-import { aventra, prettywiseBlack, prettywiseBold, objectivity } from './fonts/fonts'
+import { aventra, prettywiseBlack, prettywiseBold, objectivity, petale } from './fonts/fonts'
 
 export const metadata: Metadata = {
   title: '2024 Portfolio - Teun Elshout',
@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${aventra.variable} ${prettywiseBlack.variable} ${prettywiseBold.variable} ${objectivity.variable}`}>
+    <html lang="en" className={`${aventra.variable} ${prettywiseBlack.variable} ${prettywiseBold.variable} ${objectivity.variable} ${petale.variable}`}>
       <body>{children}</body>
     </html>
   )

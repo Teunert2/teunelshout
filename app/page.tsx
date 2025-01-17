@@ -124,7 +124,7 @@ export default function Page() {
       <div ref={secondPageRef} className="min-h-screen bg-[#FAF9F6] p-8 md:p-16 relative snap-start">
         {/* Education Section */}
         <section className="mb-16 animate-on-scroll opacity-0 transition-opacity duration-1000">
-          <h2 className="text-4xl font-bold mb-8 font-display">ONDERWIJS</h2>
+          <h2 className="text-4xl font-bold mb-8 font-display font-petale">ONDERWIJS</h2>
           <div className="space-y-6">
             <div className="flex items-start gap-4">
               <div className="font-objectivity border border-paars rounded-full px-4 py-1 text-sm">
@@ -147,7 +147,7 @@ export default function Page() {
         {/* Software Section */}
         <section className="mb-16 animate-on-scroll opacity-0 transition-opacity duration-1000 delay-300">
           <div className="border border-paars inline-block px-6 py-2 mb-6">
-            <h2 className="text-3xl font-display">SOFTWARE</h2>
+            <h2 className="text-3xl font-petale font-display">SOFTWARE</h2>
           </div>
           <div className="flex gap-4">
             <div className="bg-[#001E36] p-3 rounded">

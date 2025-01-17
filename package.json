@@ -1,13 +1,12 @@
 {
-  "name": "portfolio-2024",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --experimental-https",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "analyze": "cross-env ANALYZE=true next build"
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "^14.1.3",

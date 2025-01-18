@@ -29,3 +29,9 @@ export const petale = localFont({
   display: 'swap',
   variable: '--font-petale'
 })
+
+export const handtekening = localFont({
+  src: './handtekening.otf',
+  display: 'swap',
+  variable: '--font-handtekening'
+})

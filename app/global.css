@@ -8,6 +8,7 @@
   --font-prettywise-bold: "";
   --font-objectivity: "";
   --font-petale: "";
+  --font-handtekening: "";
 }
 
 body {
@@ -26,6 +27,10 @@ body {
 
 .font-prettywise-bold {
   font-family: var(--font-prettywise-bold);
+}
+
+.font-handtekening {
+  font-family: var(--font-handtekening);
 }
 
 .font-objectivity {

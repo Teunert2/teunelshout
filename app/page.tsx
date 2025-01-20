@@ -243,7 +243,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="min-h-screen p-8 md:p-16 relative snap-start">
+      <div id="content" className="min-h-screen p-8 md:p-16 relative snap-start">
         {/* Add background image and overlay */}
         <Image
           src="/images/background.png"
@@ -489,15 +489,63 @@ export default function Page() {
                     )}
                   </g>
                   
-                  <g id="project2" className="cursor-pointer" onClick={() => setActivePreview(activePreview === 2 ? null : 2)}>
+                  <g id="project2" className="cursor-pointer" onClick={() => {
+                       if (activePreview === 2) {
+                         // Create and animate overlay
+                         const overlay = document.createElement('div');
+                         overlay.style.position = 'fixed';
+                         overlay.style.bottom = '-100px';
+                         overlay.style.left = '-100px';
+                         overlay.style.width = '100px';
+                         overlay.style.height = '100px';
+                         overlay.style.backgroundColor = '#f8f0e2';
+                         overlay.style.transform = 'rotate(45deg)';
+                         overlay.style.transition = 'all 0.8s cubic-bezier(0.645, 0.045, 0.355, 1.000)';
+                         overlay.style.zIndex = '9999';
+                         document.body.appendChild(overlay);
+
+                         // Trigger diagonal animation
+                         setTimeout(() => {
+                           overlay.style.width = '300vw';
+                           overlay.style.height = '300vh';
+                           overlay.style.bottom = '-50vh';
+                           overlay.style.left = '-50vw';
+                         }, 50);
+
+                         // Create rocket image
+                         const rocket = document.createElement('img');
+                         rocket.src = '/images/raketje.png';
+                         rocket.style.position = 'fixed';
+                         rocket.style.bottom = '0';
+                         rocket.style.left = '0';
+                         rocket.style.width = '150px';
+                         rocket.style.height = '150px';
+                         rocket.style.transform = 'rotate(48deg)';
+                         rocket.style.transition = 'all 0.8s cubic-bezier(0.645, 0.045, 0.355, 1.000)';
+                         rocket.style.zIndex = '10000';
+                         document.body.appendChild(rocket);
+
+                         // Animate rocket
+                         setTimeout(() => {
+                           rocket.style.transform = 'translate(calc(100vw + 150px), calc(-100vh - 150px)) rotate(48deg)';
+                         }, 50);
+
+                         // Navigate after animation
+                         setTimeout(() => {
+                           window.location.href = '/projects/aimtoday';
+                         }, 800);
+                       } else {
+                         setActivePreview(2);
+                       }
+                     }}>
                     <circle cx="580" cy="300" r="8" className="fill-paars" />
-                    <text x="525" y="330" className="text-xl font-petale">Project 2</text>
+                    <text x="525" y="330" className="text-xl font-petale">AIMtoday</text>
                     
                     {activePreview === 2 && (
                       <foreignObject x="685" y="230" width="370" height="120" style={{ zIndex: 10 }}>
                         <div className="bg-white p-4 rounded-xl shadow-lg border-2 border-paars h-full flex gap-4 relative">
                           <div className="flex-1">
-                            <h3 className="text-lg font-petale text-gray-800 mb-2">Project 2</h3>
+                            <h3 className="text-lg font-petale text-gray-800 mb-2">AIMtoday</h3>
                             <p className="text-sm font-objectivity text-black line-clamp-3">
                               Korte beschrijving van het project. Dit kan een paar regels tekst zijn die het project uitlegt.
                             </p>

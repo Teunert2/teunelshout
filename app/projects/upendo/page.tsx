@@ -127,41 +127,95 @@ export default function Upendo() {
             <div className="font-objectivity">
               <h3 className="text-2xl text-paars mb-4">Over het project</h3>
               <p className="text-lg">
-                Hier komt de beschrijving van het Upendo project. 
-                Je kunt hier meerdere paragrafen toevoegen over het doel, 
-                de uitdagingen en de resultaten van het project.
+                Upendo is een innovatief data-analytics platform ontwikkeld voor 2manydots. 
+                Het project maakt bedrijfsdata toegankelijk en inzichtelijk zonder complexiteit. 
+                Met vijf kernonderdelen - Configuratie, Optimalisaties, Visualisatie, Analyse en Training - 
+                bieden we een oplossing voor datavraagstukken. Als ontwikkelaar heb ik 
+                bijgedragen aan verschillende service pagina's en componenten.
               </p>
             </div>
 
             <div className="font-objectivity">
               <h3 className="text-2xl text-paars mb-4">Technieken</h3>
               <ul className="list-disc list-inside text-lg space-y-2">
-                <li>HTML & CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
                 <li>Next.js</li>
+                <li>React</li>
+                <li>Storyblok CMS</li>
+                <li>TypeScript</li>
+                <li>CSS</li>
+                <li>Git</li>
               </ul>
+            </div>
+
+            <div className="font-objectivity">
+              <h3 className="text-2xl text-paars mb-4">Website</h3>
+              <div className="flex items-center gap-3">
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  width="24" 
+                  height="24" 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  strokeWidth="2" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  className="text-paars"
+                >
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="2" y1="12" x2="22" y2="12"/>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+                <a 
+                  href="https://fontys-upendo.vercel.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-lg text-black hover:underline relative group"
+                >
+                  https://fontys-upendo.vercel.app/
+                  <span className="absolute -right-6 top-1/2 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      width="16" 
+                      height="16" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      strokeWidth="2" 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round" 
+                      className="text-paars"
+                    >
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                      <polyline points="15 3 21 3 21 9"/>
+                      <line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
 
+          
+
           {/* Right Column - Images */}
-          <div className="space-y-8">
-            <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden">
+          <div className="space-y-8 flex flex-col items-end -mt-20">
+            <div className="aspect-[16/10] bg-gray-200 rounded-lg overflow-hidden w-[80%]">
               <Image
-                src="/path-to-your-image1.jpg"
+                src="/images/upendooptimalisation.png"
                 alt="Upendo Project Preview 1"
-                width={800}
-                height={450}
-                className="w-full h-full object-cover"
+                width={1200}
+                height={750}
+                className="w-full h-full object-contain p-2"
               />
             </div>
-            <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden">
+            <div className="aspect-[16/10] bg-gray-200 rounded-lg overflow-hidden w-[80%] self-start">
               <Image
-                src="/path-to-your-image2.jpg"
+                src="/images/upendo2.png"
                 alt="Upendo Project Preview 2"
-                width={800}
-                height={450}
-                className="w-full h-full object-cover"
+                width={1200}
+                height={750}
+                className="w-full h-full object-contain p-2"
               />
             </div>
           </div>

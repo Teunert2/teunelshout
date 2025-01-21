@@ -1,4 +1,4 @@
-// File: C:\Users\teune\Github\teunelshout\app\projects\upendo\page.tsx
+// File: C:\Users\Teun\Documents\GitHub\teunelshout\app\projects\upendo\page.tsx
 import * as entry from '../../../../../app/projects/upendo/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

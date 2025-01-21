@@ -474,12 +474,12 @@ export default function Page() {
                           <div className="flex-1">
                             <h3 className="text-lg font-petale text-gray-800 mb-2">Upendo</h3>
                             <p className="text-sm font-objectivity text-black line-clamp-3">
-                              Korte beschrijving van het project. Dit kan een paar regels tekst zijn die het project uitlegt.
+                              Upendo is een website die gaat over data, gemaakt in opdracht  van 2manydots.
                             </p>
                           </div>
-                          <div className="w-32 h-full rounded-lg overflow-hidden flex-shrink-0">
+                          <div className="w-32 h-20 rounded-lg overflow-hidden flex-shrink-0">
                             <img 
-                              src="/path-to-your-image.jpg" 
+                              src="images/upendo2.png" 
                               alt="Project preview" 
                               className="w-full h-full object-cover"
                             />
@@ -547,13 +547,13 @@ export default function Page() {
                           <div className="flex-1">
                             <h3 className="text-lg font-petale text-gray-800 mb-2">AIMtoday</h3>
                             <p className="text-sm font-objectivity text-black line-clamp-3">
-                              Korte beschrijving van het project. Dit kan een paar regels tekst zijn die het project uitlegt.
+                              Een innovatief nieuwsplatform gericht op AI en technologie, ontwikkeld met moderne webtechnologieën en een focus op gebruiksvriendelijkheid.
                             </p>
                           </div>
-                          <div className="w-32 h-full rounded-lg overflow-hidden flex-shrink-0">
+                          <div className="w-32 h-10 rounded-lg overflow-hidden flex-shrink-0 mt-4">
                             <img 
-                              src="/path-to-your-image.jpg" 
-                              alt="Project preview" 
+                              src="/images/logo.png" 
+                              alt="AIMtoday preview" 
                               className="w-full h-full object-cover"
                             />
                           </div>

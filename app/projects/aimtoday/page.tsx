@@ -54,7 +54,7 @@ export default function AIMtoday() {
   }
 
   return (
-    <div className="min-h-screen p-8 md:p-16 relative">
+    <div className="h-screen p-8 md:p-16 relative overflow-hidden">
       {/* Back Button */}
       <button 
         onClick={handleBack}
@@ -94,7 +94,7 @@ export default function AIMtoday() {
       <div className="absolute inset-0 bg-[#f8f0e2] bg-opacity-70 z-0" />
       
       {/* Content Wrapper */}
-      <div className="relative z-10">
+      <div className="relative z-10 max-w-full h-full">
         {/* Title with circle decoration */}
         <div className="relative mb-16">
           <div className="relative inline-block">
@@ -118,47 +118,98 @@ export default function AIMtoday() {
         </div>
 
         {/* Main Content */}
-        <div className="grid grid-cols-2 gap-16 mt-16">
+        <div className="grid grid-cols-2 gap-16 mt-12">
           {/* Left Column - Text Content */}
           <div className="space-y-8">
             <div className="font-objectivity">
               <h3 className="text-2xl text-paars mb-4">Over het project</h3>
               <p className="text-lg">
-                Hier komt de beschrijving van het AIMtoday project. 
-                Je kunt hier meerdere paragrafen toevoegen over het doel, 
-                de uitdagingen en de resultaten van het project.
+                AIMtoday is een innovatief marketingnieuws platform ontwikkeld voor 2manydots. 
+                Het project omvat een volledig responsive website die professionals voorziet van 
+                de laatste trends en ontwikkelingen in de marketingwereld. Als ontwikkelaar was 
+                ik verantwoordelijk voor cruciale componenten zoals de navbar, footer en home header.
               </p>
             </div>
 
             <div className="font-objectivity">
               <h3 className="text-2xl text-paars mb-4">Technieken</h3>
               <ul className="list-disc list-inside text-lg space-y-2">
-                <li>HTML & CSS</li>
+                <li>Typescript</li>
+                <li>Tailwind</li>
+                <li>Storyblok</li>
                 <li>JavaScript</li>
                 <li>React</li>
                 <li>Next.js</li>
               </ul>
             </div>
+
+            <div className="font-objectivity">
+              <h3 className="text-2xl text-paars mb-4">Website</h3>
+              <div className="flex items-center gap-3">
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  width="24" 
+                  height="24" 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  strokeWidth="2" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  className="text-paars"
+                >
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="2" y1="12" x2="22" y2="12"/>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+                <a 
+                  href="https://aimtoday.nl" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-lg text-black hover:underline relative group"
+                >
+                  https://aimtoday.nl
+                  <span className="absolute -right-6 top-1/2 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      width="16" 
+                      height="16" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      strokeWidth="2" 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round" 
+                      className="text-paars"
+                    >
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                      <polyline points="15 3 21 3 21 9"/>
+                      <line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
           </div>
 
           {/* Right Column - Images */}
-          <div className="space-y-8">
-            <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden">
+          <div className="space-y-8 flex flex-col items-end -mt-20">
+            <div className="aspect-[16/10] bg-gray-200 rounded-lg overflow-hidden w-[80%]">
               <Image
-                src="/path-to-your-image1.jpg"
+                src="/images/homepage.png"
                 alt="AIMtoday Project Preview 1"
-                width={800}
-                height={450}
-                className="w-full h-full object-cover"
+                width={1200}
+                height={750}
+                className="w-full h-full object-contain"
               />
             </div>
-            <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden">
+            <div className="aspect-[16/10] bg-gray-200 rounded-lg overflow-hidden w-[80%] self-start">
               <Image
-                src="/path-to-your-image2.jpg"
+                src="/images/interview.png"
                 alt="AIMtoday Project Preview 2"
-                width={800}
-                height={450}
-                className="w-full h-full object-cover"
+                width={1200}
+                height={750}
+                className="w-full h-full object-contai"
               />
             </div>
           </div>

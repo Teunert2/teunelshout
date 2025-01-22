@@ -115,14 +115,14 @@ export default function Upendo() {
           <div className="space-y-8">
             <div className="font-objectivity">
               <h3 className="text-2xl text-paars mb-4">Over het project</h3>
-              <p className="text-lg">
+              <p className="text-base font-[300] leading-relaxed text-gray-700 font-dm-sans">
                 Kastrix, een specialist in maatwerk bijkeukenkasten, heb ik de website ontwikkeld. De website is gebouwd met Next.js 14, React, TypeScript en Tailwind CSS, waarbij ik zorgde voor een gebruiksvriendelijke en responsieve ervaring. Mijn werk omvatte het ontwikkelen van interactieve componenten en het optimaliseren van de klantreis, van oriëntatie tot contact.
               </p>
             </div>
 
             <div className="font-objectivity">
               <h3 className="text-2xl text-paars mb-4">Technieken</h3>
-              <ul className="list-disc list-inside text-lg space-y-2">
+              <ul className="list-disc list-inside text-base font-[300] space-y-2 text-gray-700 font-dm-sans">
                 <li>Next.js</li>
                 <li>React</li>
                 <li>Tailwind CSS</li>
@@ -154,7 +154,7 @@ export default function Upendo() {
                   href="https://www.kastrix.nl" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="text-lg text-black hover:underline relative group"
+                  className="text-base font-[300] text-gray-700 hover:underline relative group font-dm-sans"
                 >
                   www.kastrix.nl
                   <span className="absolute -right-6 top-1/2 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -180,19 +180,17 @@ export default function Upendo() {
             </div>
           </div>
 
-          
-
           <div className="space-y-8 flex flex-col items-end -mt-20">
-            <div className="aspect-[16/10] bg-gray-200 rounded-lg overflow-hidden w-[80%]">
+            <div className="aspect-[16/10] bg-white rounded-lg overflow-hidden w-[80%] shadow-lg hover:shadow-xl transition-shadow duration-300 border-4 border-paars">
               <Image
                 src="/images/kastrix1.png"
-                alt="KastrixProject Preview 1"
+                alt="Kastrix Project Preview 1"
                 width={1200}
                 height={750}
                 className="w-full h-full object-contain p-2"
               />
             </div>
-            <div className="aspect-[16/10] bg-gray-200 rounded-lg overflow-hidden w-[80%] self-start">
+            <div className="aspect-[16/10] bg-white rounded-lg overflow-hidden w-[80%] self-start shadow-lg hover:shadow-xl transition-shadow duration-300 border-4 border-paars">
               <Image
                 src="/images/kastrix2.png"
                 alt="Kastrix Project Preview 2"

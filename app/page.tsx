@@ -468,7 +468,7 @@ export default function Page() {
                         <div className="bg-white p-4 rounded-xl shadow-lg border-2 border-paars h-full flex gap-4 relative">
                           <div className="flex-1">
                             <h3 className="text-lg font-petale text-gray-800 mb-2">Upendo</h3>
-                            <p className="text-sm font-objectivity text-black line-clamp-3">
+                            <p className="text-sm font-dm-sans text-black line-clamp-3">
                               Upendo is een website die gaat over data, gemaakt in opdracht  van 2manydots.
                             </p>
                           </div>
@@ -536,7 +536,7 @@ export default function Page() {
                         <div className="bg-white p-4 rounded-xl shadow-lg border-2 border-paars h-full flex gap-4 relative">
                           <div className="flex-1">
                             <h3 className="text-lg font-petale text-gray-800 mb-2">AIMtoday</h3>
-                            <p className="text-sm font-objectivity text-black line-clamp-3">
+                            <p className="text-sm font-dm-sans text-black line-clamp-3">
                               Een innovatief nieuwsplatform gericht op AI en technologie, ontwikkeld met moderne webtechnologieën en een focus op gebruiksvriendelijkheid.
                             </p>
                           </div>
@@ -605,7 +605,7 @@ export default function Page() {
                         <div className="bg-white p-4 rounded-xl shadow-lg border-2 border-paars h-full flex gap-4 relative">
                           <div className="flex-1">
                             <h3 className="text-lg font-petale text-gray-800 mb-2">Kastrix</h3>
-                            <p className="text-sm font-objectivity text-black line-clamp-3">
+                            <p className="text-sm font-dm-sans text-black line-clamp-3">
                               Kastrix, een specialist in maatwerk bijkeukenkasten, heb ik de website voor ontwikkeld
                             </p>
                           </div>

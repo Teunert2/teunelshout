@@ -115,7 +115,7 @@ export default function AIMtoday() {
           <div className="space-y-8">
             <div className="font-objectivity">
               <h3 className="text-2xl text-paars mb-4">Over het project</h3>
-              <p className="text-lg">
+              <p className="text-base font-[300] leading-relaxed text-gray-700 font-dm-sans">
                 AIMtoday is een innovatief marketingnieuws platform ontwikkeld voor 2manydots. 
                 Het project omvat een volledig responsive website die professionals voorziet van 
                 de laatste trends en ontwikkelingen in de marketingwereld. Als ontwikkelaar was 
@@ -125,7 +125,7 @@ export default function AIMtoday() {
 
             <div className="font-objectivity">
               <h3 className="text-2xl text-paars mb-4">Technieken</h3>
-              <ul className="list-disc list-inside text-lg space-y-2">
+              <ul className="list-disc list-inside text-base font-[300] space-y-2 text-gray-700 font-dm-sans">
                 <li>Typescript</li>
                 <li>Tailwind</li>
                 <li>Storyblok</li>
@@ -158,9 +158,9 @@ export default function AIMtoday() {
                   href="https://aimtoday.nl" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="text-lg text-black hover:underline relative group"
+                  className="text-base font-[300] text-gray-700 hover:underline relative group font-dm-sans"
                 >
-                  https://aimtoday.nl
+                  aimtoday.nl
                   <span className="absolute -right-6 top-1/2 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
                     <svg 
                       xmlns="http://www.w3.org/2000/svg" 
@@ -185,22 +185,22 @@ export default function AIMtoday() {
           </div>
 
           <div className="space-y-8 flex flex-col items-end -mt-20">
-            <div className="aspect-[16/10] bg-gray-200 rounded-lg overflow-hidden w-[80%]">
+            <div className="aspect-[16/10] bg-white rounded-lg overflow-hidden w-[80%] shadow-lg hover:shadow-xl transition-shadow duration-300 border-4 border-paars">
               <Image
                 src="/images/homepage.png"
                 alt="AIMtoday Project Preview 1"
                 width={1200}
                 height={750}
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain p-2"
               />
             </div>
-            <div className="aspect-[16/10] bg-gray-200 rounded-lg overflow-hidden w-[80%] self-start">
+            <div className="aspect-[16/10] bg-white rounded-lg overflow-hidden w-[80%] self-start shadow-lg hover:shadow-xl transition-shadow duration-300 border-4 border-paars">
               <Image
                 src="/images/interview.png"
                 alt="AIMtoday Project Preview 2"
                 width={1200}
                 height={750}
-                className="w-full h-full object-contai"
+                className="w-full h-full object-contain p-2"
               />
             </div>
           </div>

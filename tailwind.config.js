@@ -20,6 +20,7 @@ module.exports = {
         display: ['var(--font-display)'],
         signature: ['var(--font-signature)'],
         petale: ['var(--font-petale)'],
+        'dm-sans': ['var(--font-dm-sans)'],
       },
       keyframes: {
         ripple: {

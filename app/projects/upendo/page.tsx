@@ -115,23 +115,23 @@ export default function Upendo() {
           <div className="space-y-8">
             <div className="font-objectivity">
               <h3 className="text-2xl text-paars mb-4">Over het project</h3>
-              <p className="text-lg">
+              <p className="text-base font-[400] leading-relaxed text-gray-700 font-dm-sans">
                 Upendo is een innovatief data-analytics platform ontwikkeld voor 2manydots. 
                 Het project maakt bedrijfsdata toegankelijk en inzichtelijk zonder complexiteit. 
                 Met vijf kernonderdelen - Configuratie, Optimalisaties, Visualisatie, Analyse en Training - 
-                bieden we een oplossing voor datavraagstukken. Als ontwikkelaar heb ik 
+                bieden we een complete oplossing voor datavraagstukken. Als ontwikkelaar heb ik 
                 bijgedragen aan verschillende service pagina's en componenten.
               </p>
             </div>
 
             <div className="font-objectivity">
               <h3 className="text-2xl text-paars mb-4">Technieken</h3>
-              <ul className="list-disc list-inside text-lg space-y-2">
+              <ul className="list-disc list-inside text-base font-[400] space-y-2 text-gray-700 font-dm-sans">
                 <li>Next.js</li>
                 <li>React</li>
                 <li>Storyblok CMS</li>
                 <li>TypeScript</li>
-                <li>CSS</li>
+                <li>Tailwind CSS</li>
                 <li>Git</li>
               </ul>
             </div>
@@ -159,9 +159,9 @@ export default function Upendo() {
                   href="https://fontys-upendo.vercel.app/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="text-lg text-black hover:underline relative group"
+                  className="text-base font-[300] text-gray-700 hover:underline relative group font-dm-sans"
                 >
-                  https://fontys-upendo.vercel.app/
+                  fontys-upendo.vercel.app
                   <span className="absolute -right-6 top-1/2 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
                     <svg 
                       xmlns="http://www.w3.org/2000/svg" 
@@ -188,7 +188,7 @@ export default function Upendo() {
           
 
           <div className="space-y-8 flex flex-col items-end -mt-20">
-            <div className="aspect-[16/10] bg-gray-200 rounded-lg overflow-hidden w-[80%]">
+            <div className="aspect-[16/10] bg-white rounded-lg overflow-hidden w-[80%] shadow-lg hover:shadow-xl transition-shadow duration-300 border-4 border-paars">
               <Image
                 src="/images/upendooptimalisation.png"
                 alt="Upendo Project Preview 1"
@@ -197,7 +197,7 @@ export default function Upendo() {
                 className="w-full h-full object-contain p-2"
               />
             </div>
-            <div className="aspect-[16/10] bg-gray-200 rounded-lg overflow-hidden w-[80%] self-start">
+            <div className="aspect-[16/10] bg-white rounded-lg overflow-hidden w-[80%] self-start shadow-lg hover:shadow-xl transition-shadow duration-300 border-4 border-paars">
               <Image
                 src="/images/upendo2.png"
                 alt="Upendo Project Preview 2"

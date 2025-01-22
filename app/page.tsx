@@ -164,31 +164,31 @@ export default function Page() {
               </div>
 
               <div className="flex gap-4">
-                <div className="bg-[#001E36] p-3 rounded">
+                <div className="">
                   <Image
-                    src="/images/photoshop.png"
+                    src="/images/psd.png"
                     alt="Photoshop"
-                    width={40}
-                    height={40}
-                    className="w-10 h-10"
+                    width={50}
+                    height={50}
+                    className="w-15 h-15"
                   />
                 </div>
-                <div className="bg-[#001E36] p-3 rounded">
+                <div className="">
                   <Image
-                    src="/test.svg"
+                    src="/images/figma.png"
                     alt="Figma"
-                    width={40}
-                    height={40}
-                    className="w-10 h-10"
+                    width={50}
+                    height={50}
+                    className="w-15 h-15"
                   />
                 </div>
-                <div className="bg-[#001E36] p-3 rounded">
+                <div className="">
                   <Image
-                    src="/test.svg"
+                    src="/images/vsc.png"
                     alt="Visual Studio"
-                    width={40}
-                    height={40}
-                    className="w-10 h-10"
+                    width={50}
+                    height={50}
+                    className="w-15 h-15"
                   />
                 </div>
               </div>

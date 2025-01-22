@@ -17,7 +17,6 @@ Deze portfolio website is ontworpen en ontwikkeld om mijn werk en vaardigheden t
 - React
 - TypeScript
 - Tailwind CSS
-- Google Fonts (DM Sans, Petale)
 
 ## Lokale Ontwikkeling
 

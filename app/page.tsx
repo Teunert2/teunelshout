@@ -552,7 +552,7 @@ export default function Page() {
                     )}
                   </g>
                   
-                  <g id="kastrix" className="cursor-pointer" onClick={() => {
+                  <g id="project3" className="cursor-pointer" onClick={() => {
                       if (activePreview === 3) {
                         const overlay = document.createElement('div');
                         overlay.style.position = 'fixed';

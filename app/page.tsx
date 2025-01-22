@@ -417,7 +417,6 @@ export default function Page() {
                      className="cursor-pointer" 
                      onClick={() => {
                        if (activePreview === 1) {
-                         // Create and animate overlay
                          const overlay = document.createElement('div');
                          overlay.style.position = 'fixed';
                          overlay.style.bottom = '-100px';
@@ -430,7 +429,6 @@ export default function Page() {
                          overlay.style.zIndex = '9999';
                          document.body.appendChild(overlay);
 
-                         // Trigger diagonal animation
                          setTimeout(() => {
                            overlay.style.width = '300vw';
                            overlay.style.height = '300vh';
@@ -438,7 +436,6 @@ export default function Page() {
                            overlay.style.left = '-50vw';
                          }, 50);
 
-                         // Create rocket image
                          const rocket = document.createElement('img');
                          rocket.src = '/images/raketje.png';
                          rocket.style.position = 'fixed';
@@ -451,12 +448,10 @@ export default function Page() {
                          rocket.style.zIndex = '10000';
                          document.body.appendChild(rocket);
 
-                         // Animate rocket
                          setTimeout(() => {
                            rocket.style.transform = 'translate(calc(100vw + 150px), calc(-100vh - 150px)) rotate(48deg)';
                          }, 50);
 
-                         // Navigate after animation
                          setTimeout(() => {
                            window.location.href = '/projects/upendo';
                          }, 800);
@@ -491,7 +486,6 @@ export default function Page() {
                   
                   <g id="project2" className="cursor-pointer" onClick={() => {
                        if (activePreview === 2) {
-                         // Create and animate overlay
                          const overlay = document.createElement('div');
                          overlay.style.position = 'fixed';
                          overlay.style.bottom = '-100px';
@@ -504,7 +498,6 @@ export default function Page() {
                          overlay.style.zIndex = '9999';
                          document.body.appendChild(overlay);
 
-                         // Trigger diagonal animation
                          setTimeout(() => {
                            overlay.style.width = '300vw';
                            overlay.style.height = '300vh';
@@ -512,7 +505,6 @@ export default function Page() {
                            overlay.style.left = '-50vw';
                          }, 50);
 
-                         // Create rocket image
                          const rocket = document.createElement('img');
                          rocket.src = '/images/raketje.png';
                          rocket.style.position = 'fixed';
@@ -525,12 +517,10 @@ export default function Page() {
                          rocket.style.zIndex = '10000';
                          document.body.appendChild(rocket);
 
-                         // Animate rocket
                          setTimeout(() => {
                            rocket.style.transform = 'translate(calc(100vw + 150px), calc(-100vh - 150px)) rotate(48deg)';
                          }, 50);
 
-                         // Navigate after animation
                          setTimeout(() => {
                            window.location.href = '/projects/aimtoday';
                          }, 800);
@@ -562,22 +552,66 @@ export default function Page() {
                     )}
                   </g>
                   
-                  <g id="project3" className="cursor-pointer" onClick={() => setActivePreview(activePreview === 3 ? null : 3)}>
+                  <g id="kastrix" className="cursor-pointer" onClick={() => {
+                      if (activePreview === 3) {
+                        const overlay = document.createElement('div');
+                        overlay.style.position = 'fixed';
+                        overlay.style.bottom = '-100px';
+                        overlay.style.left = '-100px';
+                        overlay.style.width = '100px';
+                        overlay.style.height = '100px';
+                        overlay.style.backgroundColor = '#f8f0e2';
+                        overlay.style.transform = 'rotate(45deg)';
+                        overlay.style.transition = 'all 0.8s cubic-bezier(0.645, 0.045, 0.355, 1.000)';
+                        overlay.style.zIndex = '9999';
+                        document.body.appendChild(overlay);
+
+                        setTimeout(() => {
+                          overlay.style.width = '300vw';
+                          overlay.style.height = '300vh';
+                          overlay.style.bottom = '-50vh';
+                          overlay.style.left = '-50vw';
+                        }, 50);
+
+                        const rocket = document.createElement('img');
+                        rocket.src = '/images/raketje.png';
+                        rocket.style.position = 'fixed';
+                        rocket.style.bottom = '0';
+                        rocket.style.left = '0';
+                        rocket.style.width = '150px';
+                        rocket.style.height = '150px';
+                        rocket.style.transform = 'rotate(48deg)';
+                        rocket.style.transition = 'all 0.8s cubic-bezier(0.645, 0.045, 0.355, 1.000)';
+                        rocket.style.zIndex = '10000';
+                        document.body.appendChild(rocket);
+
+                        setTimeout(() => {
+                          rocket.style.transform = 'translate(calc(100vw + 150px), calc(-100vh - 150px)) rotate(48deg)';
+                        }, 50);
+
+                        setTimeout(() => {
+                          window.location.href = '/projects/kastrix';
+                        }, 800);
+                      } else {
+                        setActivePreview(3);
+                      }
+                    }}
+                  >
                     <circle cx="900" cy="100" r="8" className="fill-paars" />
-                    <text x="845" y="80" className="text-xl font-petale">Project 3</text>
-                    
+                    <text x="845" y="80" className="text-xl font-petale">Kastrix</text>
+
                     {activePreview === 3 && (
                       <foreignObject x="715" y="-90" width="370" height="120" style={{ zIndex: 10 }}>
                         <div className="bg-white p-4 rounded-xl shadow-lg border-2 border-paars h-full flex gap-4 relative">
                           <div className="flex-1">
-                            <h3 className="text-lg font-petale text-gray-800 mb-2">Project 3</h3>
+                            <h3 className="text-lg font-petale text-gray-800 mb-2">Kastrix</h3>
                             <p className="text-sm font-objectivity text-black line-clamp-3">
-                              Korte beschrijving van het project. Dit kan een paar regels tekst zijn die het project uitlegt.
+                              Kastrix, een specialist in maatwerk bijkeukenkasten, heb ik de website voor ontwikkeld
                             </p>
                           </div>
-                          <div className="w-32 h-full rounded-lg overflow-hidden flex-shrink-0">
+                          <div className="w-20 h-full rounded-lg overflow-hidden flex-shrink-0">
                             <img 
-                              src="/path-to-your-image.jpg" 
+                              src="/images/logo1.ico" 
                               alt="Project preview" 
                               className="w-full h-full object-cover"
                             />
@@ -586,6 +620,7 @@ export default function Page() {
                       </foreignObject>
                     )}
                   </g>
+
                   
                   <g id="project4" className="cursor-pointer" onClick={() => setActivePreview(activePreview === 4 ? null : 4)}>
                     <circle cx="1200" cy="300" r="8" className="fill-paars" />

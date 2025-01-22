@@ -1,6 +1,5 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
   "/page": "app/page.js",
-  "/projects/aimtoday/page": "app/projects/aimtoday/page.js",
-  "/projects/upendo/page": "app/projects/upendo/page.js"
+  "/projects/kastrix/page": "app/projects/kastrix/page.js"
 }

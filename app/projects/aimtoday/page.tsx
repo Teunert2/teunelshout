@@ -7,7 +7,6 @@ export default function AIMtoday() {
   const router = useRouter()
 
   const handleBack = () => {
-    // Create and animate overlay
     const overlay = document.createElement('div')
     overlay.style.position = 'fixed'
     overlay.style.top = '-100px'
@@ -20,7 +19,6 @@ export default function AIMtoday() {
     overlay.style.zIndex = '9999'
     document.body.appendChild(overlay)
 
-    // Create rocket image
     const rocket = document.createElement('img')
     rocket.src = '/images/raketje.png'
     rocket.style.position = 'fixed'
@@ -33,7 +31,6 @@ export default function AIMtoday() {
     rocket.style.zIndex = '10000'
     document.body.appendChild(rocket)
 
-    // Trigger diagonal animation
     setTimeout(() => {
       overlay.style.width = '300vw'
       overlay.style.height = '300vh'
@@ -42,12 +39,10 @@ export default function AIMtoday() {
       rocket.style.transform = 'translate(calc(-100vw - 150px), calc(100vh + 150px)) rotate(220deg)'
     }, 50)
 
-    // Navigate after animation and clean up elements
     setTimeout(() => {
       document.body.removeChild(overlay)
       document.body.removeChild(rocket)
       
-      // Store a flag in sessionStorage
       sessionStorage.setItem('scrollToContent', 'true')
       router.push('/')
     }, 800)
@@ -82,7 +77,6 @@ export default function AIMtoday() {
         </div>
       </button>
 
-      {/* Background Image and Overlay */}
       <Image
         src="/images/background.png"
         alt="Background"
@@ -117,9 +111,7 @@ export default function AIMtoday() {
           </div>
         </div>
 
-        {/* Main Content */}
         <div className="grid grid-cols-2 gap-16 mt-12">
-          {/* Left Column - Text Content */}
           <div className="space-y-8">
             <div className="font-objectivity">
               <h3 className="text-2xl text-paars mb-4">Over het project</h3>
@@ -192,7 +184,6 @@ export default function AIMtoday() {
             </div>
           </div>
 
-          {/* Right Column - Images */}
           <div className="space-y-8 flex flex-col items-end -mt-20">
             <div className="aspect-[16/10] bg-gray-200 rounded-lg overflow-hidden w-[80%]">
               <Image

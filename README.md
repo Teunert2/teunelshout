@@ -43,18 +43,17 @@ npm run dev
 ```
 
 ## Project Structuur
-portfolio/
-├── app/
-│   ├── projects/
-│   │   ├── kastrix/
-│   │   ├── aimtoday/
-│   │   └── upendo/
-│   ├── layout.tsx
-│   └── page.tsx
-├── public/
-│   └── images/
-└── styles/
-    └── globals.css
+- app/
+  - projects/
+    - kastrix/
+    - aimtoday/
+    - upendo/
+  - layout.tsx
+  - page.tsx
+- public/
+  - images/
+- styles/
+  - globals.css
 
 ## Contact
 - Email: teunelshout@gmail.com
